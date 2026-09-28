@@ -1,0 +1,154 @@
+{
+  "config": {
+    "campaign_cost_per_assigned_customer": 6.0,
+    "confidence_z": 1.959963984540054,
+    "customers": 6000,
+    "data_version": "synthetic-campaign-v1",
+    "historical_customers": 4000,
+    "historical_seed": 20260927,
+    "scenarios": [
+      "base",
+      "null",
+      "weak_covariate",
+      "skewed_noise"
+    ],
+    "seed": 20260928,
+    "simulation_customers": 2000,
+    "simulation_repetitions": 400,
+    "simulation_seed": 41000
+  },
+  "counts": [
+    {
+      "control": 1500,
+      "segment": 0,
+      "treatment": 1500
+    },
+    {
+      "control": 1500,
+      "segment": 1,
+      "treatment": 1500
+    }
+  ],
+  "data_sha256": {
+    "data/experiment.csv": "9f3e1a7dba5bc0618d1127dee4ab04cf43199d75f3c865ba4d71bb1822a08002",
+    "data/ground_truth.csv": "57087c1ea2e6d56ae70a62d6fb6fe10c0c1fb32055f52ef06e3d03a8e7c23fd3",
+    "data/historical.csv": "d1de4705d2fbaf8da78f340dffba2a4a03dafc642ee255f30ebe52b9271a6cc9"
+  },
+  "estimates": {
+    "adjusted": {
+      "ci_high": 9.95110286684442,
+      "ci_low": 6.359876259730222,
+      "estimate": 8.155489563287322,
+      "se": 0.9161460709077658
+    },
+    "unadjusted": {
+      "ci_high": 10.62566675481162,
+      "ci_low": 5.5133798585217,
+      "estimate": 8.06952330666666,
+      "se": 1.3041787850733446
+    }
+  },
+  "historical_slopes": {
+    "0": 0.6113156916062381,
+    "1": 0.6209630609632202
+  },
+  "interval_width_reduction": 0.2975303068925145,
+  "monte_carlo": {
+    "base": {
+      "adjusted": {
+        "bias": -0.03846153510989159,
+        "coverage": 0.945,
+        "coverage_mcse": 0.011399013115178002,
+        "empirical_sd": 1.6319300301673358,
+        "mean_se": 1.582139647369419,
+        "rejection_rate": 0.995,
+        "rmse": 1.6303425787197507
+      },
+      "unadjusted": {
+        "bias": -0.0344270538924995,
+        "coverage": 0.95,
+        "coverage_mcse": 0.010897247358851688,
+        "empirical_sd": 2.338586113280668,
+        "mean_se": 2.2733017878083235,
+        "rejection_rate": 0.9375,
+        "rmse": 2.335914760590768
+      }
+    },
+    "null": {
+      "adjusted": {
+        "bias": -0.03846153510989157,
+        "coverage": 0.945,
+        "coverage_mcse": 0.011399013115178002,
+        "empirical_sd": 1.6319300301673358,
+        "mean_se": 1.582139647369419,
+        "rejection_rate": 0.055,
+        "rmse": 1.6303425787197507
+      },
+      "unadjusted": {
+        "bias": -0.03442705389249959,
+        "coverage": 0.95,
+        "coverage_mcse": 0.010897247358851688,
+        "empirical_sd": 2.338586113280668,
+        "mean_se": 2.2733017878083235,
+        "rejection_rate": 0.05,
+        "rmse": 2.335914760590768
+      }
+    },
+    "skewed_noise": {
+      "adjusted": {
+        "bias": -0.03621736013989155,
+        "coverage": 0.955,
+        "coverage_mcse": 0.010365206220813944,
+        "empirical_sd": 1.5270407219614281,
+        "mean_se": 1.5658012863137236,
+        "rejection_rate": 0.995,
+        "rmse": 1.5255606937410457
+      },
+      "unadjusted": {
+        "bias": -0.032182878922499665,
+        "coverage": 0.955,
+        "coverage_mcse": 0.010365206220813944,
+        "empirical_sd": 2.2687818799519532,
+        "mean_se": 2.264314684545687,
+        "rejection_rate": 0.9225,
+        "rmse": 2.2661726607756663
+      }
+    },
+    "weak_covariate": {
+      "adjusted": {
+        "bias": -0.04180575403989148,
+        "coverage": 0.945,
+        "coverage_mcse": 0.011399013115178002,
+        "empirical_sd": 2.203932065841497,
+        "mean_se": 2.1183448083795495,
+        "rejection_rate": 0.9525,
+        "rmse": 2.2015723882121394
+      },
+      "unadjusted": {
+        "bias": -0.03777127282250016,
+        "coverage": 0.94,
+        "coverage_mcse": 0.011874342087037922,
+        "empirical_sd": 1.651286860253331,
+        "mean_se": 1.604599691625974,
+        "rejection_rate": 0.9975,
+        "rmse": 1.649653931331909
+      }
+    }
+  },
+  "placebo_pre_period": {
+    "ci_high": 2.9238976637866023,
+    "ci_low": -3.1967517264532694,
+    "estimate": -0.13642703133333356,
+    "se": 1.5614188420090303
+  },
+  "python": "3.11.16",
+  "source_sha256": {
+    "PROTOCOL.md": "03cfc4ec66548f450b668318ea3fcd8bff9c23e7a0d1fc67baff9dd741603cde",
+    "config.json": "09201f20020fc3e92dbe9bd6794d5c08cd17945e8abc64d84dcbbbb4da3aadcf",
+    "pyproject.toml": "c5153fdc5f94b80011e5db7dec0619f7b5bb1d8c042c6e879c9a21cc6bc1a435",
+    "study.py": "e6fee5710eb38db0b723ff024adf3b9dbd8c15f416729d15b35214a9627e7b7d",
+    "uv.lock": "095c928aacda486e8e19cbc918401fe72cdaf2169dbd1dba695a1b93391b5f9e"
+  },
+  "synthetic": true,
+  "truth": 8.0
+}

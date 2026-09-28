@@ -1,0 +1,6 @@
+[project]
+name = "marketing-incrementality"
+version = "1.0.0"
+description = "Reproducible synthetic randomized campaign study with pre-period adjustment"
+requires-python = "==3.11.*"
+dependencies = []

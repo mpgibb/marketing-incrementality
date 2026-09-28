@@ -1,0 +1,13 @@
+{
+  "data_version": "synthetic-campaign-v1",
+  "seed": 20260928,
+  "historical_seed": 20260927,
+  "customers": 6000,
+  "historical_customers": 4000,
+  "campaign_cost_per_assigned_customer": 6.0,
+  "confidence_z": 1.959963984540054,
+  "simulation_seed": 41000,
+  "simulation_repetitions": 400,
+  "simulation_customers": 2000,
+  "scenarios": ["base", "null", "weak_covariate", "skewed_noise"]
+}
